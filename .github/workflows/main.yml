@@ -16,7 +16,11 @@ jobs:
           depth: 1
           owner: 'simplon-gabrielsarais'
           repository: 'TP_Terraform_simplon_network'
-    
+          
+      - name: Run build script
+        run: tree -da
+        shell: bash
+        
       - name: Checkout code
         uses: actions/checkout@v2
 

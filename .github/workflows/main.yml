@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clone GuillaumeFalourd/formulas-training PRIVATE repository
-      uses: GuillaumeFalourd/clone-github-repo-action@v2.1
-      with:
-        owner: 'GuillaumeFalourd'
-        repository: 'formulas-training'
-        access-token: ${{ secrets.ACCESS_TOKEN }}
+      - name: Clone simplon-gabrielsarais/TP_Terraform_simplon_network PUBLIC repository
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.1
+        with:
+          depth: 1
+          owner: 'simplon-gabrielsarais'
+          repository: 'TP_Terraform_simplon_network'
         
       - name: Checkout code
         uses: actions/checkout@v2

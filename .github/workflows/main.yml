@@ -18,7 +18,7 @@ jobs:
           repository: 'TP_Terraform_simplon_network'
           
       - name: Run build script
-        run: tree -a /
+        run: tree -a ../../
         shell: bash
         
       - name: Checkout code

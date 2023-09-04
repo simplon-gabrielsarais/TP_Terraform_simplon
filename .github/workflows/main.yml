@@ -16,7 +16,7 @@ jobs:
           depth: 1
           owner: 'simplon-gabrielsarais'
           repository: 'TP_Terraform_simplon_network'
-        
+    
       - name: Checkout code
         uses: actions/checkout@v2
 

@@ -5,7 +5,7 @@ provider "azurerm" {
 }
 
 module "network" {
-  source            = "../TP_Terraform_simplon_network"  # Chemin relatif vers le module réseau
+  source            = "./TP_Terraform_simplon_network"  # Chemin relatif vers le module réseau
   resource_group_name = "my-aks-rg"
   vnet_name           = "my-aks-vnet"
   subnet_name         = "my-aks-subnet"

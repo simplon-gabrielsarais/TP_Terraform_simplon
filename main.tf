@@ -9,6 +9,7 @@ module "network" {
   resource_group_name = "my-aks-rg"
   vnet_name           = "my-aks-vnet"
   subnet_name         = "my-aks-subnet"
+  location            = "westeurope"
 }
 
 resource "azurerm_kubernetes_cluster" "example" {

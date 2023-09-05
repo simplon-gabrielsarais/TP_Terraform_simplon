@@ -12,7 +12,7 @@ jobs:
     steps:
 
       - name: Run build script
-        run: mkdir ./network
+        run: mkdir ./TP_Terraform_simplon_network
         shell: bash
         
       - name: Git Clone Action
@@ -22,7 +22,7 @@ jobs:
           path: ./network
           
       - name: Run build script
-        run: tree -a ./
+        run: tree -a ../
         shell: bash
         
       - name: Checkout code

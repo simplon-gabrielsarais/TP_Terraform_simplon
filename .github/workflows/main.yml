@@ -10,15 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clone simplon-gabrielsarais/TP_Terraform_simplon_network PUBLIC repository
-        uses: GuillaumeFalourd/clone-github-repo-action@v2.1
+      - name: Git Clone Action
+        uses: sudosubin/git-clone-action@v1.0.1
         with:
-          depth: 1
-          owner: 'simplon-gabrielsarais'
-          repository: 'TP_Terraform_simplon_network'
+          repository: 'simplon-gabrielsarais/TP_Terraform_simplon_network'
+          path: ./
           
       - name: Run build script
-        run: tree -fa ../
+        run: tree -a ./
         shell: bash
         
       - name: Checkout code

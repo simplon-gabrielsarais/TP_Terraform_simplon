@@ -10,11 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: Run build script
+        run: mkdir ./network
+        shell: bash
+        
       - name: Git Clone Action
         uses: sudosubin/git-clone-action@v1.0.1
         with:
           repository: 'simplon-gabrielsarais/TP_Terraform_simplon_network'
-          path: ./
+          path: ./network
           
       - name: Run build script
         run: tree -a ./
